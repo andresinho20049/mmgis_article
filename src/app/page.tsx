@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const links_nav = [
   { name: "Articles", href: "/articles" },
-  { name: "Colaboratory", href: "/colabs" },
+  { name: "Colaboratory", href: "/colaboratory" },
   { name: "Contact", href: "/contact" },
   { name: "About", href: "/about" },
 ];
