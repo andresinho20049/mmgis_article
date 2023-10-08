@@ -25,7 +25,7 @@ export default function FooterComponent({
             {/* <!--Copyright section--> */}
             <hr className="border-gray-200 sm:mx-auto dark:border-gray-700 py-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
-                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">EMIT™</a>. MIT
+                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://earth.jpl.nasa.gov/emit/" className="hover:underline">EMIT™</a>. MIT
                 </span>
                 <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                     <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
