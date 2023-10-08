@@ -21,14 +21,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`antialiased min-h-screen ${inter.className}`}
+        className={`min-h-screen ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Analytics />
           
           {children}
-          
-          <Analytics />
-          <FooterComponent />
         </ThemeProvider>
       </body>
     </html>

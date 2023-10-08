@@ -1,5 +1,7 @@
 "use client";
+import { links_nav } from "@/app/page";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { ModeToggle } from "../iteraction/mode-toggle";
 
@@ -13,11 +15,13 @@ export const Navigation: React.FC = () => {
 			setIntersecting(entry.isIntersecting),
 		);
 
-		
+
 
 		observer.observe(ref.current);
 		return () => observer.disconnect();
 	}, []);
+
+	const pathname = usePathname();
 
 	return (
 		<header ref={ref}>
@@ -37,18 +41,18 @@ export const Navigation: React.FC = () => {
 					</Link>
 
 					<div className="flex justify-between gap-10">
-						<Link
-							href="/projects"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
-						>
-							Projects
-						</Link>
-						<Link
-							href="/contact"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
-						>
-							Contact
-						</Link>
+
+						<ul className="flex items-center justify-center gap-10">
+							{links_nav.map((item) => (
+								<Link
+									key={item.href}
+									href={item.href}
+									className={`text-sm duration-500 ${item.href === pathname ? 'text-primary-500' : 'text-secondary-500'} hover:text-secondary-100`}
+								>
+									{item.name}
+								</Link>
+							))}
+						</ul>
 						<ModeToggle />
 					</div>
 

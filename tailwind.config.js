@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -12,49 +12,17 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      black: {
-        50: colors.black[50],
-        100: colors.black[100],
-        200: colors.black[200],
-        300: colors.black[300],
-        400: colors.black[400],
-        500: colors.black[500],
-        600: colors.black[600],
-        700: colors.black[700],
-        800: colors.black[800],
-        900: colors.black[900]
-      },
+      black: colors.black,
       white: colors.white,
-      gray: {
-        50: colors.gray[50],
-        100: colors.gray[100],
-        200: colors.gray[200],
-        300: colors.gray[300],
-        400: colors.gray[400],
-        500: colors.gray[500],
-        600: colors.gray[600],
-        700: colors.gray[700],
-        800: colors.gray[800],
-        900: colors.gray[900]
-      },
+      gray: colors.gray,
       green: colors.emerald,
       purple: colors.purple,
       yellow: colors.amber,
       pink: colors.fuchsia,
-      neutral: {
-        50: colors.neutral[50],
-        100: colors.neutral[100],
-        200: colors.neutral[200],
-        300: colors.neutral[300],
-        400: colors.neutral[400],
-        500: colors.neutral[500],
-        600: colors.neutral[600],
-        700: colors.neutral[700],
-        800: colors.neutral[800],
-        900: colors.neutral[900]
-      },
-      primary: colors.cyan[500],
-      secondary: colors.pink[50]
+      neutral: colors.neutral,
+      primary: colors.cyan,
+      secondary: colors.pink,
+      zinc: colors.zinc
     },
     screens: {
       'sm': '640px',
@@ -63,7 +31,97 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
-		extend: {}
+		extend: {
+      
+			typography: {
+				DEFAULT: {
+					css: {
+						"code::before": {
+							content: '""',
+						},
+						"code::after": {
+							content: '""',
+						},
+					},
+				},
+				quoteless: {
+					css: {
+						"blockquote p:first-of-type::before": { content: "none" },
+						"blockquote p:first-of-type::after": { content: "none" },
+					},
+				},
+			},
+			backgroundImage: {
+				"gradient-radial":
+					"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
+			},
+			animation: {
+				"fade-in": "fade-in 3s ease-in-out forwards",
+				title: "title 3s ease-out forwards",
+				"fade-left": "fade-left 3s ease-in-out forwards",
+				"fade-right": "fade-right 3s ease-in-out forwards",
+			},
+			keyframes: {
+				"fade-in": {
+					"0%": {
+						opacity: "0%",
+					},
+					"75%": {
+						opacity: "0%",
+					},
+					"100%": {
+						opacity: "100%",
+					},
+				},
+				"fade-left": {
+					"0%": {
+						transform: "translateX(100%)",
+						opacity: "0%",
+					},
+
+					"30%": {
+						transform: "translateX(0%)",
+						opacity: "100%",
+					},
+					"100%": {
+						opacity: "0%",
+					},
+				},
+				"fade-right": {
+					"0%": {
+						transform: "translateX(-100%)",
+						opacity: "0%",
+					},
+
+					"30%": {
+						transform: "translateX(0%)",
+						opacity: "100%",
+					},
+					"100%": {
+						opacity: "0%",
+					},
+				},
+				title: {
+					"0%": {
+						"line-height": "0%",
+						"letter-spacing": "0.25em",
+						opacity: "0",
+					},
+					"25%": {
+						"line-height": "0%",
+						opacity: "0%",
+					},
+					"80%": {
+						opacity: "100%",
+					},
+
+					"100%": {
+						"line-height": "100%",
+						opacity: "100%",
+					},
+				},
+			},
+    }
   },
   plugins: [require("@tailwindcss/typography")],
 }
