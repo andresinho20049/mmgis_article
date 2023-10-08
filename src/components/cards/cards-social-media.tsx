@@ -61,8 +61,11 @@ const CardsSocialMediaComponent = ({
                         if(typeof s_media.path === 'undefined')
                             s_media.path = socialIcons.find(s => s.name === s_media.name)?.path;
 
+                        if(typeof s_media.path === 'undefined')
+                            s_media.path = '';
+
                         return (
-                            <a href={s_media.url} className="px-2">
+                            <a key={s_media.name} href={s_media.url} className="px-2">
                                 <li aria-label={s_media.name}>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                         className="h-4 w-4 text-primary dark:text-primary-400">

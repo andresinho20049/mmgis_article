@@ -85,6 +85,7 @@ export const MeetTeamsComponent = () => {
                 profiles_data.map((profile) => {
                     return (
                         <CardsSocialMediaComponent 
+                            key={profile.name}
                             image_path={profile.image_path}
                             name={profile.name}
                             sub={profile.sub}

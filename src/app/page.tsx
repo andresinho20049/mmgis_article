@@ -1,18 +1,12 @@
+import { LinksNavigation } from "@/utils/LinksNavigation";
 import Link from "next/link";
-
-export const links_nav = [
-  { name: "Articles", href: "/articles" },
-  { name: "Colaboratory", href: "/colaboratory" },
-  { name: "Contact", href: "/contact" },
-  { name: "About", href: "/about" },
-];
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-10">
-          {links_nav.map((item) => (
+          {LinksNavigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}

@@ -1,9 +1,9 @@
 "use client";
-import { links_nav } from "@/app/page";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { ModeToggle } from "../iteraction/mode-toggle";
+import { LinksNavigation } from "@/utils/LinksNavigation";
 
 export const Navigation: React.FC = () => {
 	const ref = useRef<HTMLElement>(null);
@@ -43,7 +43,7 @@ export const Navigation: React.FC = () => {
 					<div className="flex justify-between gap-10">
 
 						<ul className="flex items-center justify-center gap-10">
-							{links_nav.map((item) => (
+							{LinksNavigation.map((item) => (
 								<Link
 									key={item.href}
 									href={item.href}
