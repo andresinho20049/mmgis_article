@@ -9,13 +9,15 @@ const profiles_data: ICardsSocialMediaProps[] = [
         social_media: [
             {
                 name: 'github',
-                url: 'https://github.com/'
+                url: 'https://github.com/wellbinhoo'
             },
             {
                 name: 'twitter',
+                url: 'https://wcosta.netlify.app/'
             },
             {
-                name: 'linkedin'
+                name: 'linkedin',
+                url: 'https://www.linkedin.com/in/welber-costa-845799249/'
             }
         ]
     },
@@ -26,13 +28,15 @@ const profiles_data: ICardsSocialMediaProps[] = [
         social_media: [
             {
                 name: 'github',
-                url: 'https://github.com/'
+                url: 'https://github.com/AndreyCadmo'
             },
             {
                 name: 'twitter',
+                url: 'https://twitter.com/Vortex_0202'
             },
             {
-                name: 'linkedin'
+                name: 'linkedin',
+                url: 'https://www.linkedin.com/in/andrey-cadmo-501121206/'
             }
         ]
     },
@@ -43,13 +47,15 @@ const profiles_data: ICardsSocialMediaProps[] = [
         social_media: [
             {
                 name: 'github',
-                url: 'https://github.com/'
+                url: 'https://github.com/andresinho20049'
             },
             {
                 name: 'youtube',
+                url: 'https://youtu.be/YkqWuEF6BTA?si=lE2ha4nKnSZ86MJk'
             },
             {
-                name: 'linkedin'
+                name: 'linkedin',
+                url: 'https://www.linkedin.com/in/andresinho20049/'
             }
         ]
     },
@@ -60,13 +66,13 @@ const profiles_data: ICardsSocialMediaProps[] = [
         social_media: [
             {
                 name: 'github',
-                url: 'https://github.com/'
+                url: 'https://github.com/GuilhermeRicardo'
             },
             {
                 name: 'twitter',
             },
             {
-                name: 'linkedin'
+                name: 'linkedin',
             }
         ]
     },
