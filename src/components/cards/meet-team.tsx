@@ -12,7 +12,7 @@ const profiles_data: ICardsSocialMediaProps[] = [
                 url: 'https://github.com/wellbinhoo'
             },
             {
-                name: 'twitter',
+                name: 'web',
                 url: 'https://wcosta.netlify.app/'
             },
             {
