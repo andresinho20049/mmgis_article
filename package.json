@@ -2,6 +2,10 @@
   "name": "mmgis-article",
   "version": "0.0.1",
   "private": true,
+  "author": {
+     "name": "André",
+     "url": "https://www.mmgisemit.earth/"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
