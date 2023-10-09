@@ -50,8 +50,8 @@ const profiles_data: ICardsSocialMediaProps[] = [
                 url: 'https://github.com/andresinho20049'
             },
             {
-                name: 'youtube',
-                url: 'https://youtu.be/YkqWuEF6BTA?si=lE2ha4nKnSZ86MJk'
+                name: 'twitter',
+                url: 'https://twitter.com/andresinho20049'
             },
             {
                 name: 'linkedin',
